@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract IToken",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "depositToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IToken",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "getBalanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IToken",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"stateVariables": {
+				"tokenBalances": {
+					"details": "User -> Token -> Balance"
+				}
+			},
+			"title": "Vault",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Allows users to deposit and withdraw any token (?)",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Interface/Vault.sol": "Vault"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Interface/IToken.sol": {
+			"keccak256": "0xc647a12b06d6488f2c65673dc474216de2dde93e402299dc96751b52b818cfae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2a24b5ddb548b0d022a009ef4ad6382ba244c19ead598ab5039faaf1cb884e9e",
+				"dweb:/ipfs/QmbXY1BrnoTAbnjVi9ApWmN6XBBT8d5psJCr9QxW63HPjb"
+			]
+		},
+		"contracts/Interface/Vault.sol": {
+			"keccak256": "0x4584884987c868910786b69bb91e32f8ccc7c196365b9936b72fc35ce1b1c0ab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://00e4b68c0e8d449231d4e89fc19a381b029a511b8fee498bb08e1ecba0fb1c89",
+				"dweb:/ipfs/QmfA8iDv3uTf9t16pP93idXK4YkxCDoge9VWUL7dR1p4Z6"
+			]
+		}
+	},
+	"version": 1
+}
