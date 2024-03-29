@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "callThis",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "caller",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "counts",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/InteractingOtherContracts.sol": "Interact"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/InteractingOtherContracts.sol": {
+			"keccak256": "0x3e4661b70497b1759cb2ca015fdce99c7bf9e9f44ac188554e118656cd23ce07",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d243978a4e96db5db2f942ab137cdc5ca3fcbb85a860d4be0e56364aaa71d04",
+				"dweb:/ipfs/QmcVVedt8xd6uJ3Fb5LosKZkmKFeQRGXkV5WtZUxjD4wXS"
+			]
+		}
+	},
+	"version": 1
+}

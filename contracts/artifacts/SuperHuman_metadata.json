@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "sayHello",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "isMember",
+						"type": "bool"
+					}
+				],
+				"name": "welcomeMsg",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Inheritence.sol": "SuperHuman"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Inheritence.sol": {
+			"keccak256": "0x8c74c3ef090751754ccc7e11c22dbb8fce48b7b988a65fa506279d03195f61c4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a6033e344bc434362fd66674636168e805707d076fe1ecddae1c18e9815d6194",
+				"dweb:/ipfs/QmPHjRWauYGu5YXsg14UxUgcXQrCi88UcfnocmV1ivpVrS"
+			]
+		}
+	},
+	"version": 1
+}

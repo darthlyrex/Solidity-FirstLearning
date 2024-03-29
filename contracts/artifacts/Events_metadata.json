@@ -1,0 +1,240 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_orderId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_consumer",
+						"type": "address"
+					}
+				],
+				"name": "OrderCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_orderId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_zipCode",
+						"type": "string"
+					}
+				],
+				"name": "ZipChanged",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderId",
+						"type": "uint256"
+					}
+				],
+				"name": "advanceOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_zipCode",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_products",
+						"type": "uint256[]"
+					}
+				],
+				"name": "createOrder",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderId",
+						"type": "uint256"
+					}
+				],
+				"name": "getOrder",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "customer",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "zipCode",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "products",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "enum Events.Status",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Events.Order",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "orders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "zipCode",
+						"type": "string"
+					},
+					{
+						"internalType": "enum Events.Status",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "txCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_zip",
+						"type": "string"
+					}
+				],
+				"name": "updateZip",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Event.sol": "Events"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Event.sol": {
+			"keccak256": "0xbe6854f675712227b4fd7a14e53cc2598eaeb0b57356e7f4c2a4dd5d41666a04",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://46564fa1b15904df0c91e75d5ff799c73537c6bcca9bfdd41107ede61f87628c",
+				"dweb:/ipfs/QmTwQg4yPdmhao3ShW9mW9rWzcC7MFa1E3f6SgJ24m38RG"
+			]
+		}
+	},
+	"version": 1
+}
